@@ -3,7 +3,7 @@ import os
 from fastapi import APIRouter, HTTPException
 
 from ai_core.gemini_generator import generate_legal_document
-from backend.schemas import DocumentRequest
+from schemas import DocumentRequest
 
 router = APIRouter()
 
