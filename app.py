@@ -70,8 +70,7 @@ st.divider()
 
 # -----------------------------
 # Generate Document
-# -----------------------------
-if st.button("Generate Legal Document"):
+# -----------------------------if st.button("Generate Legal Document"):
 
     if not parties:
         st.warning("Please enter the parties.")
@@ -91,9 +90,9 @@ if st.button("Generate Legal Document"):
         try:
 
             response = requests.post(
-                "http://127.0.0.1:8000/generate",
+                "https://legalease-11.onrender.com/generate",
                 json=data,
-                timeout=30
+                timeout=60
             )
 
             if response.status_code == 200:
@@ -125,8 +124,7 @@ if st.button("Generate Legal Document"):
 
 # -----------------------------
 # Generated Document
-# -----------------------------
-if st.session_state.generated_document:
+# -----------------------------if st.session_state.generated_document:
 
     st.subheader("Generated Document")
 
