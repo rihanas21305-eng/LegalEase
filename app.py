@@ -91,7 +91,7 @@ if st.button("Generate Legal Document"):
         try:
 
             response = requests.post(
-                "https://legalease-ixca.onrender.com/generate",
+                "https://legalease-11.onrender.com/generate",
                 json=data,
                 timeout=60
             )
