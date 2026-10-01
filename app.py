@@ -93,7 +93,7 @@ if st.button("Generate Legal Document"):
             response = requests.post(
                 "https://legalease-11.onrender.com/generate",
                 json=data,
-                timeout=60
+                timeout=90
             )
 
             if response.status_code == 200:
